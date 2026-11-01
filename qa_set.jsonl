@@ -1,0 +1,18 @@
+{"id":"q01","question":"What is the minimum nominal cover for a member in severe exposure?","gold_doc":"scp100-reinforced-concrete-fictional","gold_clause":"3.2","must_include":["45"],"answerable":true}
+{"id":"q02","question":"What is the maximum water-cement ratio for very severe exposure?","gold_doc":"scp100-reinforced-concrete-fictional","gold_clause":"3.2","must_include":["0.40"],"answerable":true}
+{"id":"q03","question":"How long must concrete with fly ash cement be cured?","gold_doc":"scp100-reinforced-concrete-fictional","gold_clause":"3.3","must_include":["10 days"],"answerable":true}
+{"id":"q04","question":"What is the minimum lap length for tension bars?","gold_doc":"scp100-reinforced-concrete-fictional","gold_clause":"4.3","must_include":["300 mm"],"answerable":true}
+{"id":"q05","question":"What is the minimum diameter of stirrups and their maximum spacing?","gold_doc":"scp100-reinforced-concrete-fictional","gold_clause":"4.4","must_include":["6 mm","300 mm"],"answerable":true}
+{"id":"q06","question":"What does clause 4.2 say about development length of tension bars?","gold_doc":"scp100-reinforced-concrete-fictional","gold_clause":"4.2","must_include":["40 times"],"answerable":true}
+{"id":"q07","question":"What is the span to effective depth limit for a cantilever beam?","gold_doc":"scp100-reinforced-concrete-fictional","gold_clause":"5.2","must_include":["7"],"answerable":true}
+{"id":"q08","question":"What is the minimum cement content for moderate exposure per Table 1?","gold_doc":"scp100-reinforced-concrete-fictional","gold_clause":"2.1","must_include":["320"],"answerable":true}
+{"id":"q09","question":"State Terzaghi's effective stress principle.","gold_doc":"soil-mechanics-course-notes","gold_clause":"2.1","must_include":["pore water pressure"],"answerable":true}
+{"id":"q10","question":"What time factor corresponds to 90 percent consolidation?","gold_doc":"soil-mechanics-course-notes","gold_clause":"3.2","must_include":["0.848"],"answerable":true}
+{"id":"q11","question":"How is the plasticity index defined?","gold_doc":"soil-mechanics-course-notes","gold_clause":"1.1","must_include":["LL - PL"],"answerable":true}
+{"id":"q12","question":"What value of Nc applies to a purely cohesive soil?","gold_doc":"soil-mechanics-course-notes","gold_clause":"4.1","must_include":["5.7"],"answerable":true}
+{"id":"q13","question":"What is the maximum bending moment of a simply supported beam under UDL?","gold_doc":"structural-analysis-course-notes","gold_clause":"1.1","must_include":["wL^2/8"],"answerable":true}
+{"id":"q14","question":"What is the tip deflection of a cantilever carrying a point load at the free end?","gold_doc":"structural-analysis-course-notes","gold_clause":"1.2","must_include":["PL^3/(3EI)"],"answerable":true}
+{"id":"q15","question":"What is the carry-over factor when the far end is fixed?","gold_doc":"structural-analysis-course-notes","gold_clause":"2.1","must_include":["0.5"],"answerable":true}
+{"id":"q16","question":"What is the seismic zone factor for Hyderabad?","gold_doc":null,"gold_clause":null,"must_include":[],"answerable":false}
+{"id":"q17","question":"What wind speed should be used for a 40 m tall chimney?","gold_doc":null,"gold_clause":null,"must_include":[],"answerable":false}
+{"id":"q18","question":"How much does a bag of cement cost?","gold_doc":null,"gold_clause":null,"must_include":[],"answerable":false}

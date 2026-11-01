@@ -1,0 +1,17 @@
+# core (works offline with BM25 + extractive answers)
+numpy>=1.26
+pyyaml>=6.0
+pypdf>=4.2
+python-docx>=1.1
+fastapi>=0.111
+uvicorn>=0.30
+python-multipart>=0.0.9
+anthropic>=0.40
+python-dotenv>=1.0
+
+# optional: dense retrieval + reranking (downloads models from Hugging Face on first run)
+# sentence-transformers>=3.0
+
+# dev
+pytest>=8.0
+httpx>=0.27

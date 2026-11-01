@@ -1,0 +1,38 @@
+# CivilCode RAG — everything tunable lives here.
+project: civilcode-rag
+store_dir: store
+
+data:
+  dir: data/raw
+  extensions: [".pdf", ".md", ".txt", ".docx"]
+
+chunking:
+  max_words: 220        # ~300 tokens. Clauses are short; keep one clause per chunk when possible
+  overlap_words: 30     # only used when a single clause is longer than max_words
+
+embeddings:
+  enabled: true         # needs `pip install sentence-transformers`; falls back to BM25-only if missing
+  model: BAAI/bge-small-en-v1.5
+  query_prefix: "Represent this sentence for searching relevant passages: "
+
+retrieval:
+  top_k: 5              # chunks sent to the LLM
+  candidates: 30        # per retriever, before fusion
+  rrf_k: 60
+  bm25_weight: 1.0
+  dense_weight: 1.0
+  clause_boost: 0.03    # added when the question cites "clause 4.2" / "Table 3" and the chunk matches
+  neighbors: 1          # also attach the previous/next chunk of the same clause
+  max_per_doc: 4
+  rerank: false         # cross-encoder rerank (needs sentence-transformers)
+  rerank_model: BAAI/bge-reranker-base
+  min_coverage: 0.25    # BM25-only mode: abstain before calling the LLM unless some passage matches
+                        # at least this share of the question's (IDF-weighted) terms
+  min_dense_sim: 0.35   # same, when dense retrieval is on
+
+generation:
+  model: claude-sonnet-5-5
+  fast_model: claude-haiku-5-5   # used only to rewrite follow-up questions
+  max_tokens: 900
+  temperature: 0.0
+  history_turns: 4
